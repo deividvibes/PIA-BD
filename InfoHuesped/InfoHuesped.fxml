@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InfoHuesped.InfoHuespedController">
+   <children>
+      <Button layoutX="480.0" layoutY="361.0" mnemonicParsing="false" onAction="#pulsarBotonListo" text="Listo" />
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="51.0" prefHeight="36.0" prefWidth="1000.0" text="INFORMACION HUESPED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComboHuesped" editable="true" layoutX="422.0" layoutY="108.0" prefWidth="150.0" promptText="Huesped" />
+      <TableView fx:id="TablaHuesped" layoutY="150.0" prefHeight="200.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="ColumnID" prefWidth="42.0" text="ID" />
+          <TableColumn fx:id="ColumnNombre" prefWidth="130.0" text="Nombre" />
+            <TableColumn fx:id="ColumnApellidos" prefWidth="155.0" text="Apellidos" />
+            <TableColumn fx:id="ColumnTelefono" minWidth="0.0" prefWidth="121.0" text="Telefono" />
+            <TableColumn fx:id="ColumnCorreo" prefWidth="131.0" text="Correo" />
+            <TableColumn fx:id="ColumnDireccion" prefWidth="236.0" text="Direccion" />
+            <TableColumn fx:id="ColumnEstado" prefWidth="94.0" text="Estado" />
+            <TableColumn fx:id="ColumnMunicipio" prefWidth="90.0" text="Municipio" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
